@@ -14,7 +14,7 @@ required_conan_version = ">=1.58.0 <2.0.0"
 
 
 class CuraConan(ConanFile):
-    name = "cura"
+    name = "go3d"
     license = "LGPL-3.0"
     author = "UltiMaker"
     url = "https://github.com/Ultimaker/cura"
