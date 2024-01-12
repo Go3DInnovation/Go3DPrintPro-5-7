@@ -14,7 +14,7 @@ required_conan_version = ">=1.58.0 <2.0.0"
 
 
 class CuraConan(ConanFile):
-    name = "cura"
+    name = "go3d"
     license = "LGPL-3.0"
     author = "UltiMaker"
     url = "https://github.com/Ultimaker/cura"
@@ -214,7 +214,7 @@ class CuraConan(ConanFile):
                 continue
 
             if "package" in data:  # get the paths from conan package
-                if data["package"] == self.name:
+                if data["package"] == "cura":
                     if self.in_local_cache:
                         src_path = os.path.join(self.package_folder, data["src"])
                     else:
