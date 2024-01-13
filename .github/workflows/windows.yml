@@ -38,6 +38,11 @@ on:
         type: choice
         options:
           - windows-2022
+      ref_name:
+        description: 'Git ref (main, 5.7, sha)'
+        required: false
+        default: 'main'
+        type: string
 
 env:
   CONAN_ARGS: ${{ inputs.conan_args || '' }}
@@ -55,4 +60,5 @@ jobs:
       staging: ${{ inputs.staging == 'true' }}
       architecture: ${{ inputs.architecture }}
       operating_system: ${{ inputs.operating_system }}
+      ref_name: ${{ inputs.ref_name }}
     secrets: inherit
