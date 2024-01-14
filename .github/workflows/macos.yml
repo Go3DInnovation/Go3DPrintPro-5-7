@@ -42,6 +42,8 @@ on:
           - self-hosted-ARM64
           - macos-11
           - macos-12
+          - macos-13-arm64
+          - macos-13
 
 env:
   CONAN_ARGS: ${{ inputs.conan_args || '' }}
