@@ -45,6 +45,7 @@ on:
           - macos-13-arm64
           - macos-13
           - macos-latest-xlarge
+          - flyci-macos-large-latest-m1
 
 env:
   CONAN_ARGS: ${{ inputs.conan_args || '' }}
